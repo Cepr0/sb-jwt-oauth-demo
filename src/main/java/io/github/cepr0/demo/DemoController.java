@@ -10,11 +10,11 @@ import java.util.Map;
 @RestController
 public class DemoController {
 
-	@SuppressWarnings("unchecked")
 	@GetMapping("/demo")
 	public Map demo(OAuth2Authentication auth) {
 
 		var details = (OAuth2AuthenticationDetails) auth.getDetails();
+		//noinspection unchecked
 		var decodedDetails = (Map<String, Object>) details.getDecodedDetails();
 
 		return Map.of(

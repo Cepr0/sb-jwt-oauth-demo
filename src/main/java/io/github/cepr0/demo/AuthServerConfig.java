@@ -1,6 +1,5 @@
 package io.github.cepr0.demo;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,7 +21,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Slf4j
 @Configuration
 @EnableAuthorizationServer
 @EnableResourceServer
